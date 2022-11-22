@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <!-- Datos que describen el documento -->
+
+        <!--Metadatos de los documentos HTML5-->
+        <meta charset="UTF-8" />
+        <meta name="author" content="Sara Lamuño García" />
+        <meta name="description" content="Ejercicio 5, calculadora RPN (notación polaca inversa)" />
+        <meta name ="keywords" content ="RPN,add,sub,mult,div,cambiaSigno,log,raiz" >
+
+        <meta name ="viewport" content ="width=device-width, initial scale=1.0" />
+
+        <script src="PilaRPN.js"></script>
+        <script src="CalculadoraRPN.js"></script>
+
+        <title>Calculadora RPN</title>
+        <!--Añadir el elemento link de enlace a la hoja de estilo dento del <head> del documento html-->
+        <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+        
+    
+        
+        
+        
+           
+    </head>
+    <body>
+        <h1>Calculadora RPN</h1>
+        
+
+            <form>
+
+                <label for="pantalla">Pila Calculadora</label>
+                <textarea rows="10"  name="pantalla" id="pantalla" lang="es" disabled>
+                </textarea>
+               
+                <label for="actual">Calculadora RPN</label>
+                <input type="text" name="actual" id="actual" value="" lang="es" disabled>
+                
+                <input type="button" value="sin" onclick="calculadoraRPN.sin()" />
+                <input type="button" value="cos" onclick="calculadoraRPN.cos()" />
+                <input type="button" value="tan" onclick="calculadoraRPN.tan()" />
+                <input type="button" value="log" onclick="calculadoraRPN.log()" />
+                <input type="button" value="exp" onclick="calculadoraRPN.exp()" />
+                
+                
+    
+                <input  type="button" value="asin" onclick="calculadoraRPN.asin()" />
+                <input type="button" value="acos" onclick="calculadoraRPN.acos()" />
+                <input  type="button" value="atan" onclick="calculadoraRPN.atan()" />
+                <input type="button" value="+-" onclick="calculadoraRPN.cambiaSigno()" />
+                <input type="button" value="√" onclick="calculadoraRPN.raiz()" />
+                
+    
+    
+                <input type="button" value="1" onclick="calculadoraRPN.número(1)" />
+                <input type="button" value="2" onclick="calculadoraRPN.número(2)" />
+                <input type="button" value="3" onclick="calculadoraRPN.número(3)" />
+                
+                <input type="button" value="+" onclick="calculadoraRPN.add()" />
+                <input type="button" value="-" onclick="calculadoraRPN.sub()" />
+    
+                <input type="button" value="4" onclick="calculadoraRPN.número(4)" />
+                <input type="button" value="5" onclick="calculadoraRPN.número(5)" />
+                <input type="button" value="6" onclick="calculadoraRPN.número(6)" />
+               
+                
+                <input type="button" value="*" onclick="calculadoraRPN.mult()" />
+    
+                <input type="button" value="/" onclick="calculadoraRPN.div()" />
+                
+               
+                <input type="button" value="7" onclick="calculadoraRPN.número(7)" />
+                <input type="button" value="8" onclick="calculadoraRPN.número(8)" />
+                <input type="button" value="9" onclick="calculadoraRPN.número(9)" />
+                <input type="button" value="0" onclick="calculadoraRPN.número(0)" />
+               
+                
+                <input type="button" value="." onclick="calculadoraRPN.punto()" />
+                <input type="button" value="ENT" onclick="calculadoraRPN.calcula()" />
+                <input type="button" value="C" onclick="calculadoraRPN.empty()" />
+                
+    
+                <input type="submit" value="submit"  />
+            </form>
+
+            
+
+          
+
+
+        
+
+    </body>
+</html>
