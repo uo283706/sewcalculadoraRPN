@@ -136,7 +136,7 @@ textarea{
     width: 15vw;
 }
 
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 15em) {
 /*Selector Specificity: (0, 0, 1)*/
     form {
         background-color: purple;
